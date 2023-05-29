@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Links mit style</title>
+        <style>
+            a.mitstyle:link {
+                color:green;
+                text-decoration: overline;
+            }
+            a.mitstyle:visited {
+                color:red;
+                text-decoration: underline;
+            }
+            a.mitstyle:hover {
+                color:yellow;
+                text-decoration: none;
+            }
+            a.mitstyle:active {
+                color:blue;
+                text-decoration: overline;
+            }
+            a.button:link, a.button:visited {
+                background-color: blue;
+                color: white;
+                padding: 14px 25px;
+                display: inline-block;
+                text-decoration: none;
+
+            }
+            a.button:hover, a.button:active {
+                background-color: darkblue;
+
+            }
+        </style>
+    </head>
+        <body>
+	        <a href="farben.html">Back to Homepage</a>
+            <h1>Links mit style</h1>
+            <p>Reihenfolge der states ist wichtig!</p>
+            <a href="https://www.google.com" target="_blank">Zu Google</a><br>
+            <a href="https://www.wikipedia.org" target="_blank" class="mitstyle">Zu Wikipedia</a><br>
+            <a href="https://www.google.com" target="_blank" class="button">Link als button</a><br>
+        </body>
+</html>

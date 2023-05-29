@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boxmodel</title>
+        <style>
+            div {
+                background-color: darkblue;
+                color: white;
+                display: inline-block;
+            }
+
+            p.box {
+                display: inline-block;
+                border: 5px solid aqua;
+                margin: 10px;
+                padding: 40px;
+                width: 290px;
+            }
+
+            h3 { 
+                margin-bottom: 0px;
+            }
+
+            p {
+                margin: 20px;
+            }
+        </style>
+    </head>
+        <body>
+	        <a href="farben.html">Back to Homepage</a>
+            <h1>Boxmodel</h1>
+            <span><strong>Boxmodel:</strong> alle HTML Elemente kann man sich als Box vorstellen und besteht aus Textinhalt, Padding, Border und Margin</span><br>
+            <div>
+                <p class="box">Textinhalt</p>
+            </div>
+            <h3>Margin Collapse</h3><br>
+            <span>Definition: HTML fasst für bestimmte Element die Margin zusammen - z.B. Geschwisterelemente - um ein möglichst einheitliches Bild auf der Seite zu erzeugen; das wird umgangen z.B. durch display: inline-block</span>
+            <p>Eins</p>
+            <p>Zwei</p>
+            <p>Drei</p>
+        </body>
+</html>

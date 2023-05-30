@@ -28,6 +28,16 @@
             .folgt {
                 border: 3px solid red;
             }
+            div.festebreite {
+                width: 500px;
+                margin: auto;
+                border: 3px solid red;
+            }
+            div.flexiblebreite {
+                max-width: 500px;
+                margin: auto;
+                border: 3px solid red;
+            }
 
         </style>
     </head>
@@ -56,5 +66,9 @@
             <div class="floating">Inhalt 9</div>
             <div class="folgt">Nach dem Grid</div>
             </div>
+            <hr>
+            <h2>Max-Width</h2>
+            <div class="festebreite">Dieses Element hat eine feste Breite und wir ggf abgeschnitten.</div>
+            <div class="flexiblebreite">Dieses Element hat eine flexible Breite.</div>
         </body>
 </html>

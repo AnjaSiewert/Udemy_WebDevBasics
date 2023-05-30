@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Align</title>
+        <style>
+            div {
+                border: 3px solid black;
+            }
+            #divhoricent {
+                width: 400px;
+                margin: auto;
+            }
+            .textcenter {
+                text-align: center;
+            }
+            .right {
+                float: right;
+                right: 0;
+            }
+            #divright {
+                width: 300px;
+                padding: 10px;
+            }
+            .clearright {
+                clear:right;
+            }
+            .hamburg {
+                width: 400px;
+            }
+            .imgcenter {
+                display: block;
+                margin: auto;
+            }
+            .clearfix {
+                overflow: auto;
+            }
+            #verttext {
+                padding: 80px 0px;
+            }
+            .line-height {
+                line-height: 200px;
+            }
+            .line-height p {
+                line-height: 1.5;
+            }
+
+        </style>
+    </head>
+        <body>
+	 	    <a href="farben.html">Back to Homepage</a>
+            <h1>Align - Ausrichtung</h1>
+            <h3>Block Elemente horizontal zentrieren</h3>
+            <div id="divhoricent" class="textcenter">
+                <p>Lorem ipsum dolor sit amit.</p>
+            </div>
+            <h3>Bilder horizontal zentrieren</h3>
+            <img class="hamburg imgcenter" src="../images/photo1.avif">
+            <h3>Elemente links bzw. rechts ausrichten</h3>
+            <div class="right" id="divright">
+                <p>Lorem ipsum dolor sit amit.</p>
+            </div>
+            <h3 class="clearright">Überstehende Float Elemente</h3>
+            <div class="clearfix">
+                <img class="hamburg right" src="../images/photo2.avif">
+                <p>Lorem ipsum dolor sit amit.</p>
+            </div>
+            <hr>
+            <h3>Vertikale Ausrichtung (mit Padding)</h3>
+            <div class="textcenter">
+                <p id="verttext">Lorem ipsum dolor sit amit.</p>
+            </div>
+            <h3>Vertikale Ausrichtung (mit line-height)</h3>
+            <div class="line-height">
+                <p>Lorem ipsum dolor sit amit.</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </body>
+</html>

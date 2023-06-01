@@ -1,0 +1,25 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+div p 
+/*all p elements that follow a div element*/
+{
+    color: blue;
+
+}
+#higher-parent > p 
+/*all p elements that direct children of elements with id higher-parent*/
+{
+    text-transform: uppercase;
+}
+
+div + p {
+    /*all p elements that are direct siblings of a div element*/
+    color: red;
+}
+
+div ~ p 
+/*all p elements that are siblings in general of a div element*/
+{
+    text-decoration: underline;
+}

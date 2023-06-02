@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    /*Allgemein*/
+    background-color: #ccc;
+    width: 100%;
+    height: 700px;
+    /*Flex*/
+    display: flex;
+    flex-flow: row wrap;  /*Zusammenfassung direction & wrap*/
+    justify-content: space-around; /*space-around: gleichviel Platz zwischen den Element, space-between: Platz wird zwischen den Elementen aufgeteilt*/
+    align-items: stretch; /*stretch: komplette Höhe wird eingenommen*/
+    align-content: space-around;
+}
+.item {
+    border: 1px solid darkorange;
+    padding: 20px;
+    text-align: center;
+    /*Flex*/
+    order: 2;
+    flex-basis: 250px; /*Breite der Elemente*/
+    flex-grow: 0;
+    flex-shrink: 0; 
+    /*Zusammenfassen in flex (grow, shrink, basis):
+    flex: 0 0 250px;
+    */
+}
+.item4 {
+    order:1;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+a {
+    color: black;
+}

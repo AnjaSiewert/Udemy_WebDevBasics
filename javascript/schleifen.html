@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schleifen</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <a href="../css/farben.html">Back to Homepage</a>
+    <h1>Schleifen</h1>
+    <h3>While Schleife</h3>
+    <p>Solange eine Bedingung erfüllt ist, führe etwas aus</p>
+    <script>
+        "use strict";
+        /*
+        while (Bedingung) {
+            Code
+            Loop-body
+        }
+        */
+     /*   let i = 4;
+       while (i < 4) {
+        alert(i);
+        i++;
+       } */
+     /*   let i = 3;
+       while (i) {
+        alert(i);
+        i--;
+       } */
+       // do while loop (läuft mindestens einmal durch)
+       let i = 0;
+       do {
+        alert(i);
+        i++;
+       } while 
+        (i < 2);
+    </script>
+    <h3>For Schleife</h3>
+    <script>
+        "use strict";
+      /*   for (Start, Bedingung, Schritt) {
+            Code / Loop Body
+        } */
+        for (let j = 0; j < 3; j++) {
+            alert(j);
+        };
+    </script>
+     <h3>Weitere Funktionalitäten</h3>
+     <h4>Break</h4>
+     <script>
+         "use strict";
+         let sum = 0;
+         while (true) {
+            let wert = +prompt("Was soll addiert werden?", "")
+
+            if (!wert) break;
+
+            sum +=wert;
+         }
+         alert("Summe ist: " + sum);
+
+     </script>
+     <h4>Continue</h4>
+     <script>
+         "use strict";
+         // nur ungerade Zahlen ausgeben
+         for (let k = 0; k < 10;k++) {
+            if (k % 2 == 0) continue;
+            alert(k);
+         }
+     </script>
+     <h4>Labels</h4>
+     <script>
+         "use strict";
+         außen: for (let l = 0; l < 3;l++) {
+            for (let m = 0; m < 3; m++) {
+                let wert = prompt(`Welcher Wert liegt bei (${l},${m}) vor?`, "")
+
+                if (!wert) break außen;
+            }
+         }
+         alert ("Wir sind fertig!")
+     </script>
+</body>
+</html>

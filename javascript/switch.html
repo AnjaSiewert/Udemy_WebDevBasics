@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Switch</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <a href="../css/farben.html">Back to Homepage</a>
+    <h1>Switch Statements</h1>
+    <p> Der break ist wichtig, wenn eine Bedingung erfüllt ist, wird die Funktion nicht weiter ausgeführt, sonst werden alle Bedingungen geprüft.</p>
+    <p>Der Datentyp ist entscheidend, die strike Gleichheit wird überprüft (5 ist nicht gleich "5")</p>
+    <script>
+        "use strict";
+   /*      switch(wert) {
+            case "Wert1":
+                Code...; 
+                break;
+            case "Wert2":
+                Code...; 
+                break;
+            default:
+            Code...; 
+                break;
+        } */
+
+        // Additions-Check
+
+    /*     let check = +prompt("Was ergibt 2+2?", "");
+
+        switch(check) {
+            case 3:
+                alert("Zu niedrig!");
+                break;
+            case 4:
+                alert("Super, dass ist richtig!");
+                break;
+            case 5:
+                alert("Zu groß");
+                break;
+            default:
+                alert("Du bist zu weit vom Ergebnis entfernt!")
+        } */
+
+        // Einzelne cases gruppieren
+
+        switch(check) {
+            case 4:
+                alert("Super, dass ist richtig!");
+                break;
+            case 3:
+            case 5:
+                alert("Falsch, aber nah dran");
+                break;
+            default:
+                alert("Du bist zu weit vom Ergebnis entfernt!")
+        } 
+    </script>
+</body>
+</html>

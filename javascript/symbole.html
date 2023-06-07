@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symbole</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <a href="../css/farben.html">Back to Homepage</a>
+    <h1>Symbole</h1>
+    <h3>Symbole Grundlagen</h3>
+  <script>
+        "use strict";
+        // Neues Symbol erstellen
+        let firstID = Symbol("id"); // in Klammern können wir Beschriebungen festhalten
+       
+        // Symbole mit gleicher Beschreibung
+        let id1 = Symbol("id");
+        let id2 = Symbol("id");
+        alert(id1 === id2); // false
+
+        alert(id1) // Symbole könenn nicht direkt in einen String umgewandelt werden
+        alert(id1.toString); // erfolgreiche Ausgabe
+
+    </script>
+    <h3>Versteckte Eigenschaften</h3>
+    <script>
+           "use strict";
+            let user = {
+                name: "John Doe",
+                alter: 25,
+                istMann: true
+            };
+
+            let id = Symbol("id");
+
+            user[id] = "Nutzer ID";
+            alert(user[id]); // Nutzer ID
+            for (let key in user) {
+                alert(key);
+            }
+    </script>
+</body>
+</html>

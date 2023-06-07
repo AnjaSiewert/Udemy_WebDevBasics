@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML ändern</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="seite" type="example">
+    <a href="../css/farben.html">Back to Homepage</a>
+    <h1>Attribute und innerHTML</h1>
+    <h3>Beispiel Inhalte</h3>
+    <p id="p1">Alter Paragraph!</p>
+    <img id="bild" src="../images/flower.jpeg" alt="Beispielbild" width="200px">
+    <h3>DOM und Attribute</h3>
+    <script>
+        "use strict";
+        
+        // Attribute abrufen
+        // alert(document.body.id); // seite
+        
+        // TagName abrufen
+        // alert(document.body.tagName); // BODY
+        
+        // Achtung: Standard-Attribute
+        // alert(document.body.type); // undefined
+        // Nur Standard-Attribute werden automatisch umgewandelt
+        
+    </script>
+    <h3>HTML ändern</h3>
+    <script>
+        "use strict";
+        
+        // innerHTML
+        // Inhalte von HTML-Elementen ändern
+        let paragraph = document.getElementById("p1");
+        paragraph.innerHTML = "Neuer Paragraph!";
+        
+        // Attribute ändern
+        let image = document.getElementById("bild");
+        image.src = "../images/ice.jpeg";
+        
+    </script>
+
+</body>
+</html>

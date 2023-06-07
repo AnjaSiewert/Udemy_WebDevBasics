@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Constructor</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <a href="../css/farben.html">Back to Homepage</a>
+    <h1>Constructor</h1>
+  <script>
+        "use strict";
+        function User (name) {
+            this.name = name;
+            this.isAdmin = false;
+
+            this.sagHi = function() {
+                alert("Mein Name ist: " + this.name);
+            }
+        };
+
+        // Wir verwenden new mit dem constructor
+        let user1 = new User("John");
+        let user2 = new User("Peter");
+        let user3 = new User("Anna");
+        let user4 = new User("Susanne");
+        alert(user2.name);
+        alert(user4.isAdmin);
+
+        alert(user2.sagHi());
+    </script>
+</body>
+</html>

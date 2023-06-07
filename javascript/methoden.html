@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Methoden</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <a href="../css/farben.html">Back to Homepage</a>
+    <h1>Methoden</h1>
+    <h3>Methoden erstellen</h3>
+  <script>
+        "use strict";
+        //Einleitung
+      /*   let user = {
+            name: "John Doe",
+            alter: 35
+        };
+
+        user.sagHi = function() {
+            alert("Hi");
+        };
+
+        user.sagHi(); */
+
+        let user = {
+            sagHi() {
+                alert("Hi");
+            }
+        };
+        user.sagHi();
+    </script>
+      <h3>"this"</h3>
+      <script>
+            "use strict";
+            let user2 = {
+                name: "John Doe",
+                alter: 35,
+                sagNamen() {
+                    alert(this.name);
+                }
+            };
+            user2.sagNamen();
+        </script>
+</body>
+</html>

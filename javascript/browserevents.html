@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browser events</title>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <a href="../css/farben.html">Back to Homepage</a>
+    <h1>Browser events</h1>
+    <h3>Überblick Browser-Events</h3>
+    <ul>
+        <li>click</li>
+        <li>mouseover/mouseout</li>
+        <li>mousemove</li>
+        <li>submit</li>
+        <li>focus</li>
+        <li>keydown/keyup</li>
+        <li>...</li>
+    </ul>
+    <h3>Event handlers</h3>
+    <h4>HTML Attribut</h4>
+    <!-- on<event> -->
+        <button type="button" onclick="alert('click')">Click me</button>
+
+        <!-- ZUgriff auf JS Funktion -->
+
+        <button type="button" onclick="clickFunction()">Zählen</button>
+
+        <!-- für das DOM Beispiel -->
+
+        <button id="domButton" type="button">DOM Beispiel</button>
+
+    <h4>DOM Property</h4>
+  <script>
+        "use strict";
+        function clickFunction() {
+            for (let i = 0; i < 3; i++) {
+                alert("Wir sind grade bei: " + i);
+            }
+        }
+
+        domButton.onclick = function () {
+            alert("Event Handler in JS");
+        };
+    </script>
+</body>
+</html>
